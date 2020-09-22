@@ -24,6 +24,7 @@ const addressAt = (index, linkedList, collection) => {
     return linkedList
   } else {
     let node = nodeAt(index-1, linkedList, collection)
+    console.log(node.next)
     return node.next
   }
 }
