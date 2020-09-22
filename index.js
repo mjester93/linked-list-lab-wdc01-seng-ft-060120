@@ -28,7 +28,7 @@ const addressAt = (index, linkedList, collection) => {
   }
 }
 
-const indexAt = (node, collection, linkedList) {
+const indexAt = (node, collection, linkedList) => {
   let currentNode = headNode(linkedList, collection);
   let currentIndex = 0;
 
