@@ -18,3 +18,12 @@ const nodeAt = (index, linkedList, collection) => {
 
   return currentNode;
 }
+
+const addressAt = (index, linkedList, collection) => {
+  if(index == 0){
+    return linkedList
+  } else {
+    let node = nodeAt(index-1, linkedList, collection)
+    return node.next
+  }
+}
