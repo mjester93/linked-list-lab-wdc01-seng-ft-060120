@@ -9,3 +9,7 @@ const headNode = (linkedList, collection) => {
 const next = (node, collection) => {
   return collection[`${node.next}`]
 }
+
+const nodeAt (index, linkedList, collection) => {
+  return collection[index]
+}
