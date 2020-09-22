@@ -3,5 +3,5 @@ const getName = (node) => {
 }
 
 const headNode = (linkedList, collection) => {
-  return linkedList[collection]
+  return collection[linkedList]
 }
