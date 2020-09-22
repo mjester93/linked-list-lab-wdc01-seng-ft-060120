@@ -6,6 +6,6 @@ const headNode = (linkedList, collection) => {
   return collection[linkedList]
 }
 
-const next = (node) => {
-  return node.next
+const next = (node, collection) => {
+  return collection[`${node.next}`]
 }
