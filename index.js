@@ -2,4 +2,6 @@ const getName = (node) => {
   return node.name
 }
 
-const headNode = (node) => {}
+const headNode = (linkedList, collection) => {
+  return linkedList[collection]
+}
