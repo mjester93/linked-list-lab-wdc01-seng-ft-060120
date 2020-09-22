@@ -38,3 +38,16 @@ const indexAt = (node, collection, linkedList) => {
   }
   return currentIndex
 }
+
+const insertNodeAt = (index, newNodeAddress, linkedList, collection) => {
+  let previousNode = nodeAt(index - 1, linkedList, collection);
+  let subsequentNode = nodeAt(index, linkedList, collection);
+
+  let previousNodeIndex = indexAt(previousNode, collection, linkedList);
+  let subsequentNodeIndex = indexAt(subsequentNode, collection, linkedList);
+  let previousNodeAddress = addressAt(previousNode, linkedList, collection);
+  let subsequentNodeAddress = addressAt(subsequentNode, linkedList, collection);
+  previousNode.next = newNodeAddress;
+  let newNode = collection[newNodeAddress];
+  newNode.next = subsequentNodeAddress;
+}
