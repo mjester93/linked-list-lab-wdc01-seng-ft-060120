@@ -27,3 +27,14 @@ const addressAt = (index, linkedList, collection) => {
     return node.next
   }
 }
+
+const indexAt = (node, collection, linkedList) {
+  let currentNode = headNode(linkedList, collection);
+  let currentIndex = 0;
+
+  while(currentNode != node){
+    currentIndex++
+    currentNode = next(currentNode, collection)
+  }
+  return currentIndex
+}
