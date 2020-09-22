@@ -11,5 +11,6 @@ const next = (node, collection) => {
 }
 
 const nodeAt = (index, linkedList, collection) => {
-  return collection[index]
+  let head = headNode(linkedList, collection);
+  return next(currentNode, collection)
 }
